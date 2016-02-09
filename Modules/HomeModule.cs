@@ -18,6 +18,10 @@ namespace Cars
         newCar.Save();
         return View["car_added.cshtml", newCar];
       };
+      Post["/cars_cleared"] = _ => {
+        Car.ClearAll();
+        return View["cars_cleared.cshtml"];
+      };
     }
   }
 }

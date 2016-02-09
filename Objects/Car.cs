@@ -59,6 +59,9 @@ namespace Cars.Objects
     {
       _carObjects.Add(this);
     }
-
+    public static void ClearAll()
+    {
+      _carObjects.Clear();
+    }
   }
 }
